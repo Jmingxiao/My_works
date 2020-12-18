@@ -1368,6 +1368,9 @@
     <ClInclude Include="src\SolarSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\includes\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="rsc\landPosition.txt" />

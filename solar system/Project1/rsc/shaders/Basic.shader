@@ -32,7 +32,7 @@ in vec3 oNormal;
 in vec3 FragPos;
 in vec2 v_TexCoord;
 
-uniform sampler2D u_Texture[3];
+uniform sampler2D u_Texture[10];
 uniform vec3 lightcolor;
 uniform vec3 lightPos;
 uniform vec3 viewPos;

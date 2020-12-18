@@ -7,9 +7,9 @@
 #include <GLFW/glfw3.h>
 #include<iostream>
 
-enum CameraMode
+enum PlanetType
 {
-	FORWARD,BACKWARD,TOPWARD,DOWNWARD
+	 Sun,Earth,Moon,Jupiter,Mars,Mercury,Neptune,Saturn,Uranus,Venus,
 };
 
 class SolarSys {
@@ -21,14 +21,12 @@ private:
 	Renderer m_renderer;
 	Shader shader;
 	Texture texture;
-	unsigned int m_timer_e;
-	unsigned int m_timer_m; 
+	unsigned int planet_ellipse[10] = {0};
 	float SunRot;
-	float EarthRot;
-	glm::mat4 proj;
+	float PlanetRot;
+	glm::mat4 proj_;
 	glm::mat4 earthPos;
-	glm::mat4 view;
-	CameraMode mode;
+	glm::mat4 view_;
 	float camRot;
 public:
 	SolarSys();
@@ -38,6 +36,13 @@ public:
 	void DrawSun();
 	void DrawEarth();
 	void DrawMoon();
-	void processInputs(GLFWwindow* window);
+	void DrawMercury();
+	void DrawVenus();
+	void DrawMars();
+	void DrawJupiter();
+	void DrawSaturn();
+	void DrawUranus();
+	void DrawNeptune();
+	void CameraUpdate(glm::mat4 proj, glm::mat4 view, glm::vec3 viewPos);
 	
 };

@@ -302,6 +302,7 @@
     <None Include="src\vendor\glm\gtx\wrap.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\includes\Camera.h" />
     <ClInclude Include="src\includes\IndexBuffer.h" />
     <ClInclude Include="src\includes\Renderer.h" />
     <ClInclude Include="src\includes\Shader.h" />
