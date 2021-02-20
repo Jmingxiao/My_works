@@ -2,6 +2,7 @@
  - solor system
  - blinphong simulation
  - heightmap and camera frusum 
- - may and will do a shadow mapping
- - guess another pbr simual later than that 
+ - a shadow mapping
+ - a model processor with a reflection effect and its kernal effect
+ - guess a ray tracing later 
  
