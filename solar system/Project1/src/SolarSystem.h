@@ -1,9 +1,9 @@
 #pragma once
 #include "Object.h"
 #include "Renderer.h"
-#include"VertexBuffer.h"
-#include"VertexBufferLayout.h"
-#include"Texture.h"`
+#include "VertexBuffer.h"
+#include "VertexBufferLayout.h"
+#include "Texture.h"`
 #include <GLFW/glfw3.h>
 #include<iostream>
 

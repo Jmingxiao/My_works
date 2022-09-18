@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include"Renderer.h"
+#include<stdexcept>
 
 struct VertexBufferElement
 {
@@ -31,7 +32,7 @@ public:
 	template<typename T>
 	void Push(unsigned int count) 
 	{
-		static_assert(false);
+		throw std::runtime_error("push without parameter");
 	}
 	template<>
 	void Push<float>(unsigned int count) {

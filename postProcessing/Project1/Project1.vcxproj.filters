@@ -481,6 +481,7 @@
     <None Include="rsc\shaders\skyboxFS.shader" />
     <None Include="rsc\shaders\quadFS.shader" />
     <None Include="rsc\shaders\quadVS.shader" />
+    <None Include="rsc\shaders\hdrfs.shader" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\vendor\stb_image\stb_image.h">

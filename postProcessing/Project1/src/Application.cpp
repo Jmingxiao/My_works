@@ -158,11 +158,11 @@ int main(void)
     float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
       // positions   // texCoords
       -1.0f,  1.0f,0.0f,  0.0f, 1.0f,
-      -1.0f,  0.5f, 0.0f,  0.0f, 0.0f,
-       -0.5f,  0.5f, 0.0f,  1.0f, 0.0f,
+      -1.0f,  0.0f, 0.0f,  0.0f, 0.0f,
+       0.0f,  0.0f, 0.0f,  1.0f, 0.0f,
                        
-      -0.5f,  0.5f, 0.0f,  1.0f, 0.0f,
-      -0.5f,  1.0f, 0.0f,  1.0f, 1.0f,
+      0.0f,  0.0f, 0.0f,  1.0f, 0.0f,
+      0.0f,  1.0f, 0.0f,  1.0f, 1.0f,
       -1.0f,  1.0f, 0.0f,  0.0f, 1.0f
     };
 
@@ -172,7 +172,7 @@ int main(void)
     va_q.AddBuffer(vb_q, layout_q);
 
     Shader quadShader;
-    quadShader.Creat("rsc/shaders/quadVS.shader", "rsc/shaders/quadFS.shader");
+    quadShader.Creat("rsc/shaders/quadVS.shader", "rsc/shaders/hdrfs.shader");
     quadShader.SetUniform1i("screenTexture", 0);
  //------------frame buffer----and quad--------
  // framebuffer configuration
@@ -184,7 +184,7 @@ int main(void)
     unsigned int textureColorbuffer;
     glGenTextures(1, &textureColorbuffer);
     glBindTexture(GL_TEXTURE_2D, textureColorbuffer);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, SCR_WIDTH, SCR_HEIGHT, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, SCR_WIDTH, SCR_HEIGHT, 0, GL_RGBA, GL_FLOAT, NULL);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, textureColorbuffer, 0);

@@ -35,7 +35,7 @@ static void processInput(GLFWwindow* window,float dt);
 
 
 //----------set camera---------
-Camera camera(glm::vec3(5.0f, 5.0f, 5.0f));
+Camera camera(glm::vec3(5.0f, 5.0f, -5.0f));
 float previousMouse_x = SCR_WIDTH / 2.0f;
 float previousMouse_y = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -90,9 +90,9 @@ int main(void)
 //----Scene Objects-------------;
     LightCube light(glm::vec3(2.0f,5.0f,-3.0f));
     BackDrop backdrop;
-    Cube cube(glm::vec3(2.0f,4.0f,-3.0f),2);
-    Cube cube1(glm::vec3(-2.0f,2.0f, -5.0f),3);
-    Cube cube2(glm::vec3(0.0f, 3.0f, -8.0f), 4);
+    Cube cube(glm::vec3(2.0f,4.0f,3.0f),2);
+    Cube cube1(glm::vec3(-2.0f,2.0f, 5.0f),3);
+    Cube cube2(glm::vec3(0.0f, 3.0f, 8.0f), 4);
 
     Renderer render;
 

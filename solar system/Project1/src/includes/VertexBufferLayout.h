@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include"Renderer.h"
+#include<iostream>
 
 struct VertexBufferElement
 {
@@ -31,7 +32,8 @@ public:
 	template<typename T>
 	void Push(unsigned int count) 
 	{
-		static_assert(false);
+		//static_assert(false,"why£¿£¿£¿");
+		std::cout << "why£¿£¿£¿";
 	}
 	template<>
 	void Push<float>(unsigned int count) {

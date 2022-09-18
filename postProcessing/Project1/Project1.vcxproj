@@ -164,6 +164,7 @@
     <ClCompile Include="src\includes\VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="rsc\shaders\hdrfs.shader" />
     <None Include="rsc\shaders\heightmapFS.shader" />
     <None Include="rsc\shaders\heightmapVS.shader" />
     <None Include="rsc\shaders\quadFS.shader" />
