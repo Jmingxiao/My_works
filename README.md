@@ -1,9 +1,9 @@
-# a simple OpenGL work
+# My work
  - solor system
  - blinphong simulation
  - heightmap and camera frusum 
  - a shadow mapping
  - a model processor with a reflection effect and its kernal effect
  - a pbr material without ibl
- - guess a ray tracing later 
+ - a path tracing implmentation with unity computer shader
  
