@@ -1,2 +1,0 @@
-C:/Users/jmx/Desktop/OpenGL/Project1/src/vendor/glm/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
-C:/Users/jmx/Desktop/OpenGL/Project1/src/vendor/glm/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
