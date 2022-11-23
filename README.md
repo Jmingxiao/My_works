@@ -13,4 +13,4 @@
 
 
 
-> For more projects, labs, and tutorials please check [my blog](www.jmingxiao.site) 
+> For more projects, labs, and tutorials please check [my blog](https://www.jmingxiao.site) 
